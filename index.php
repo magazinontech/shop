@@ -1,8 +1,3 @@
-<?php
-$vesta_title = "Тайтл";
-$vesta_description = "Описание.";
-$vesta_sitename = "Название сайта";
-?>
 <!DOCTYPE html>
 <html lang="ru" prefix="og: http://ogp.me/ns#">
 <head>
