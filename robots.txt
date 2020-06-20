@@ -1,3 +1,0 @@
-User-agent: *
-Host: https://%domain%
-Sitemap: https://%domain%/sitemap.xml
