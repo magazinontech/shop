@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteBase /
+
+# http to https
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# www to non-www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$
+RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
+
+# from index.php to domain
+RewriteRule ^index.php$ / [NC,R=301,L]
+RewriteRule ^index.html$ / [NC,R=301,L]
+
+# for /out/ redirects
+RedirectMatch 302 /out/(.*)$ $1

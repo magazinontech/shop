@@ -1,0 +1,38 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #505050;
+  background-color: #F9F9F9;
+}
+a {
+  color: #1da7da;
+}
+a:hover {
+  color: #343434;
+}
+h1 {
+  padding: 20px 0 0;
+  margin: 0;
+}
+nav {
+  text-align: center;
+  font-size: 14px;
+  margin: 5px 0 20px;
+}
+.container {
+  max-width: 800px;
+  background-color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.main p img {
+  display: block;
+  margin: 0 auto;
+}
+.likely {
+  margin: 0 auto 10px auto;
+  text-align: center;
+  display: block;
+}
+footer {
+  margin: 30px 0 20px;
+}
