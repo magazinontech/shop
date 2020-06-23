@@ -1,0 +1,56 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <title>
+        Cảm ơn bạn! Đơn đặt hàng của bạn đã được chấp nhận!
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=320" />
+    <meta name="MobileOptimized" content="width=320" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link media="all" rel="stylesheet" type="text/css" href="./confirm/order-style.css" />
+</head>
+
+<body>
+   <!-- Facebook Pixel Code -->
+<img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2337142906588658&ev=Lead&noscript=1"
+/>
+<!-- End Facebook Pixel Code -->
+    <script src="full/counter.js"></script>
+    <div id="wrapper">
+        <div class="container">
+            <span class="decoration">
+        </span>
+            <div class="order-block">
+                <div class="text-holder">
+                    <h2><span>Cảm ơn bạn! </span> Đơn đặt hàng của bạn đã được chấp nhận! </h2>
+                    <p>Nhân viên điều hành của chúng tôi sẽ liên hệ với bạn để xác nhận đơn đặt hàng. Nếu Quý khách đang
+                        bật chế độ tự động trả lời trên điện thoại, xin vui lòng tắt chế độ để nhân viên tổng đài có thể
+                        liên lạc.<br /> Việc giao hàng sẽ được dịch vụ chuyển phát nhanh thực hiện. Bạn vui lòng thanh
+                        toán khi giao hàng!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-url-parser/2.3.1/purl.min.js"></script>
+    <script src="https://click.lucky.online/js/leadprofit.js"></script>
+    <script>
+        $(function() {
+
+            $(document).leadprofitConfirm();
+
+            $('input').on('change', function(e) {
+                $('#' + e.target.name).attr('data-comment', e.target.value);
+                $('.btn-save-adress').unbind('click');
+                $('[data-comment]').leadprofitAddComment();
+            });
+
+        }());
+    </script>
+</body>
+
+</html>
